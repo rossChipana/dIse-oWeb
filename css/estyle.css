@@ -1,0 +1,42 @@
+
+.nav-link:hover{
+    text-shadow: 0px 0px 30px #000;
+    border-bottom: solid 2px #fff;
+    transition: ease all 0.7s;
+}
+.nav-link{
+    border-bottom: solid 2px #fff transparent;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.carousel-container{
+display: flex;
+justify-content: flex-start;
+
+
+}
+.carousel img{
+    object-position: center;
+}
+i.bi{
+    font-size: 200px;
+}
+.imagen-fondo{
+   background-image:url(../imagenes/ambur\ 2.jpeg);
+   background-size: cover;
+   background-position:center ;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 0;
+}
+div.color-fondo{
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+
+
+}
+form{
+    background-color: rgb(255, 255, 255,0.5);
+    padding: 15px;
+    border-radius: 10px;
+}

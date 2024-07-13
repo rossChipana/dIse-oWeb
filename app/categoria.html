@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Platos 1.0
+    </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.scss">
+    <link rel="stylesheet" href="../css/estyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 px-0">
+
+                <nav class="py-0 fixed-top navbar bg-primary navbar-expand-lg  " data-bs-theme="dark">
+                    <div class="container">
+                        <a href="#" class="navbar-brand ">
+                            <img src="../imagenes/logo1.jpeg" height="30" class="me-3 p-0">
+                            Restaurant chicken 1.0
+
+
+                        </a>
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a href="login.html" class="nav-link active">Ingresar</a></li>
+                                <li class="nav-item"><a href="pedidos.html#nosotros" class="nav-link active">Pedidos</a></li>
+                                <li class="nav-item">
+                                    <a href="ventas.html#productos" class="nav-link active">Ventas</a>
+                                </li>
+                                <!--menu despleagable-->
+                                <li class="nav-item dropdown">
+                                  <a href="#productos" 
+                                    class="nav-link active dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                  >
+                                        Registrar
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"href="producto.html">Producto</a></li>
+                                        <li><a class="dropdown-item"href="categoria.html">Categoria</a></li>
+                                        <li><a class="dropdown-item"href="usuario.html">Usuario</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="salir.html" class="nav-link active">Salir</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+        <!--FORMULARIO -->
+        <div class="container" id="productos">
+            <section class="row py-5">
+                <div class="col-12">
+                    <h2 class="text-center">Formulario de Categoría</h2>
+                    
+
+                </div>
+              <!--insertar 12 productos con el componente card-->
+              <article class=" col-12 col-md-8 col-lg-6 mx-auto">
+                <form action="get" class="border p-4">
+                    <div class="form-container">
+                        <h2></h2>
+                        <form action="procesar_categoria.php" method="POST">
+                            <div class="form-group">
+                                <label for="categoria_platos  ">Selecciona de  platos a su eleccion:</label>
+                                <select id="categoria_platos" name="categoria_platos" required>
+                                    <option value="">Selecciona una categoría...</option>
+                                    <option value="entradas">Spiedo</option>
+                                    <option value="plato_principal">Picana</option>
+                                    <option value="postres">Pollo al Horno</option>
+                                    <option value="bebidas">Broaster</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Guardar categoría</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </form>
+              
+               
+              </article>
+              
+
+            </section>
+        </div>
+
+       
+<!--pie de pagina-->
+
+<div class="container-fluid bg-dark">
+    <div class="container">
+ <section class="row text-light d-flex">
+    <article class="order-1 col-12 col-md-8 pt-3 ">
+        <p class="text-center text-md-start">Copyright &copy;2024-Desarrolado por:Roselin Chipana</p>
+    </article>
+    <article class="pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly">
+         <a class="link-light link-opacity-75-hover"target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo/?locale=es_LA">
+            <i class="bi bi-facebook fs-3"></i>
+         </a>
+         <a class="link-light link-opacity-75-hover"target="_blank" href="https://www.youtube.com/channel/UC-FgwdII7YJUNmj-RN6qVOg">
+            <i class="bi bi-youtube fs-3"></i>
+         </a>
+          <a class="link-light link-opacity-75-hover" target="_blank" href="https://www.instagram.com/rapidoyhambriento/?hl=es">
+            <i class="bi bi-instagram fs-3"></i>
+         </a>
+         <a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://wa.link/mws88d">
+            <i class="bi bi-whatsapp fs-3"></i>
+         </a>
+    </article>
+
+ </section>
+</div>
+</div>
+    <script src="../js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
